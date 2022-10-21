@@ -1,0 +1,36 @@
+{
+	"name": "IHP Devcontainer",
+  
+	"build": {
+	  "dockerfile": "Dockerfile"
+	},
+  
+	"mounts": [
+	  "source=ihp_nix,target=/nix,type=volume"
+	],
+  
+	"containerEnv": {
+	  "PROJECT_DIR": "${containerWorkspaceFolder}"
+	},
+  
+	"settings": {
+	  "terminal.integrated.profiles.linux": {
+		"bash": {
+			"path": "/bin/bash"
+		  }
+		},
+		"terminal.integrated.defaultProfile.linux": "bash"
+	},
+  
+	"userEnvProbe": "loginShell",
+  
+	"extensions": [
+	  "bbenoist.nix"
+	],
+
+	"onCreateCommand": "sudo apt install direnv",
+  
+	"forwardPorts": [],
+  
+	"remoteUser": "vscode" 
+  }
