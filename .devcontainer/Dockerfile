@@ -16,6 +16,10 @@ COPY nix.conf /etc/nix/nix.conf
 # This loads the development environment when the container is started.
 COPY profile.sh /etc/profile.d/devcontainer.sh
 
+# Install Cachix
+COPY --chown=vscode:vscode installcachix.sh /etc/profile.d/installcachix.sh
+RUN chmod 765 /etc/profile.d/installcachix.sh
+
 ENV USER=vscode
 
 # Rebuilding the container should not throw the Nix store away so we make /nix
