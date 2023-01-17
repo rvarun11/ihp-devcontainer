@@ -28,7 +28,10 @@
 	  "bbenoist.nix"
 	],
 
-	"onCreateCommand": "sudo apt install direnv",
+	"onCreateCommand": {
+		"Install Direnv": "sudo apt install direnv",
+		"Install and set up Cachix": "echo '/etc/profile.d/installcachix.sh' >> ~/.bashrc"
+	},
   
 	"forwardPorts": [],
   
