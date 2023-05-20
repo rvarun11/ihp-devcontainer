@@ -1,6 +1,8 @@
-# ihp-devcontainer
+# ihp-devcontainer has been moved
 
-## Get Started
+See: [codespaces-ihp](https://github.com/rvarun11/codespaces-ihp)
+
+### Get Started
 
 1. Copy the contents of the repo (except this README.md ofcourse) to any IHP project.
 2. Open VSCode and install [Remote Development](https://aka.ms/vscode-remote/download/extension) extension.
